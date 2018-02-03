@@ -21,7 +21,7 @@ void main(){
   printf("compiles\n");
   IntList l = ilistNew();
   ilistAppend(&l,2);
-  ilistPrint(l);
+  ilistPrint(l);  
 }
 IntList ilistNew( )
 {
