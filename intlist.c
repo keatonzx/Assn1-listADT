@@ -23,6 +23,7 @@ void main(){
   ilistAppend(&l,2);
   ilistPrint(l);  
 }
+
 IntList ilistNew( )
 {
   IntList list;
