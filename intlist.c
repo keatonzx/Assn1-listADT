@@ -19,9 +19,7 @@
 //CREATE NEW EMPTY LIST
 void main(){
   printf("compiles\n");
-  IntList l = ilistNew();
-  ilistAppend(&l,2);
-  ilistPrint(l);  
+  
 }
 
 IntList ilistNew( )
@@ -182,8 +180,6 @@ void ilistShiftLeft( IntList *list, int index)
 void checkSize(IntList *list)
 {
   if(list->capacity == list->len){
-   // printf("length %d = capacity %d\n", list->len, list->capacity);
-   // printf("GROWING THE LIST...\n");
     listGrow(list);
   }
 }
